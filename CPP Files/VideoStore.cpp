@@ -25,5 +25,11 @@ void printMenu(){
         cout << "3. Delete an item" << endl;
         cout << "4. Rent an item" << endl;
     }
+    else if (input == 2) {
+        cout << "************************************************************************" << endl;
+        cout << "1. Add an account" << endl;
+        cout << "2. Update an account" << endl;
+        cout << "3. Delete an account" << endl;
+    }
 
 }
