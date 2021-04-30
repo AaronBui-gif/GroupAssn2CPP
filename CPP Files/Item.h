@@ -7,6 +7,30 @@
 
 
 class Item {
+private:
+    int id;
+    string title;
+    string rentType;
+    string loanType;
+    int numberOfCopies;
+    float fee;
+    string genre;
+public:
+    int getID();
+    string getTitle();
+    string getRentType();
+    string getLoanType();
+    int getNumberOfCopies();
+    float getFee();
+    string getGenre();
+
+    void setID(int id);
+    void setTitle(string title);
+    void setRentType(string rentType);
+    void setLoanType(string loanType);
+    void setNumberOfCopies(int numberOfCopies);
+    void setFee(float fee);
+    void setGenre(string genre);
 
 };
 
