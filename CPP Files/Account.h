@@ -7,7 +7,34 @@
 
 
 class Account {
+private:
+    int id;
+    string name;
+    string address
+        string phoneNumber;
+    int listOfRentals;
+    string type;
+public:
+    Account();
+    Account(string id, string name, string address, string phone);
 
+    ~Account();
+
+    // Getter Functions
+    string getID();
+    string getName();
+    string getAddress();
+    string getPhoneNumber();
+    int getListOfRentals();
+
+    // Setter Functions
+    void setID();
+    void setName();
+    void setAddress();
+    void setPhoneNumber();
+    void setListOfRentals();
+
+    //Function 
 };
 
 
