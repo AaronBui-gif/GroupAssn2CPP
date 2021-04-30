@@ -33,10 +33,19 @@ public:
         this->listOfRentals = listOfRental;
     }
 
+    // Getter Fuctions
     int getID() const {return this->id;}
     string getName() const {return this->name;}
     string getAddress() const {return this->address;}
     string getPhoneNumber() const {return this->phoneNumber;}
     int getListOfRentals() const {return this->listOfRentals;}
+
+    // Setter Functions
+    void setID() { this->id = id; }
+    void setName() { this->name = name; }
+    void setAddress() { this->address = address; }
+    void setPhoneNumber() { this->phoneNumber = phoneNumber; }
+    void setListOfRentals() { this->listOfRentals = listOfRentals; }
+
 
 };
