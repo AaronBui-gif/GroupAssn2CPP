@@ -14,6 +14,11 @@ private:
     int numberOfCopies;
     float fee;
     string genre;
+    Status status{
+        AVAILABLE,
+        BORROWED
+    };
+
 public:
     /*** GETTER ***/
     int getID() const {return id;}
@@ -23,6 +28,7 @@ public:
     int getNumberOfCopies() const {return numberOfCopies;}
     float getFee() const {return fee;}
     string getGenre() const {return genre;}
+    Status getStatus() { return this->status; }
 
     /*** SETTER ***/
     void setID(int id) {this->id = id;}
@@ -32,5 +38,12 @@ public:
     void setNumberOfCopies(int numberOfCopies){this->numberOfCopies = numberOfCopies;}
     void setFee(float fee){this->fee = fee;}
     void setGenre(string genre){this->genre = genre;}
-
+    void setStatus(Status status) {
+        if (status == Status::AVAILABLE) {
+            this->status = Status::AVAILABLE;
+        }
+        else {
+            this->status = Status::BORROWED;
+        }
+    }
 };
