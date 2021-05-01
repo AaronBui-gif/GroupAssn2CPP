@@ -76,6 +76,7 @@ void getOption() {
         }
         else {
             cout << "User's input is invalid" << endl;
+            cout << "Please enter again" << endl;
         }
-    } while (input >= 1 && input <= 10);
+    } while (input < 1 && input > 10);
 }
